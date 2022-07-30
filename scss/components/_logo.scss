@@ -1,0 +1,52 @@
+.navigation__logo {
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+
+    /* identical to box height */
+    letter-spacing: 0.03em;
+
+    color: var(--main-color);
+}
+
+
+.navigation__logo-dark {
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+
+    /* identical to box height */
+    /*letter-spacing: 0.03em;*/
+    color: var(--logo-color);
+}
+
+.footer-cont1__logo-light {
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+
+    /* identical to box height */
+    /*letter-spacing: 0.03em;*/
+    color: var(--btn-ftr-color);
+}
+
+.footer-cont1__logo {
+    display: inline-block;
+    margin-top: 0px;
+}
+
+.footer-logo {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+
+    /* identical to box height */
+    letter-spacing: 0.03em;
+
+    color: #2196F3;
+}

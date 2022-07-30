@@ -1,0 +1,54 @@
+.skills__suptittle {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    /*letter-spacing: 0.03em;*/
+    text-transform: uppercase;
+
+    color: var(--tittle-color);
+    margin-top: 30px;
+
+
+}
+
+.skills__text {
+    /*font-size: 14px;*/
+    line-height: 1.71;
+    width: 270px;
+    height: 75px;
+    margin-top: 10px;
+    /* or 171% */
+    /* letter-spacing: 0.03em;*/
+
+    color: var(--description-color);
+}
+
+
+.skills__list {
+    display: flex;
+
+}
+
+
+
+.skills__item:not(:last-child) {
+    margin-right: 30px;
+}
+
+
+
+.skills__div {
+    width: 270px;
+    height: 120px;
+    border-radius: 4px;
+    background-color: #f5f4fa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.skills__icon {
+    width: 70px;
+    height: 70px;
+}

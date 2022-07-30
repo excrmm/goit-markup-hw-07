@@ -1,0 +1,18 @@
+.page-header .container {
+    display: flex;
+
+    height: 80px;
+}
+
+.page-header {
+    border: 1px solid #ECECEC;
+    height: 80px;
+    /* align-items: center; */
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+
+    box-sizing: border-box;
+}
