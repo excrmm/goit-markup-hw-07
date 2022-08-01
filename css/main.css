@@ -177,17 +177,15 @@ address {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+.clients__link:hover, .clients__link:focus {
+  border-color: var(--button-color);
+  color: var(--button-color);
+}
 
 .clients__icons {
   width: 106px;
   height: 60px;
   fill: currentColor;
-}
-
-.clients__link:hover,
-.clients__link:focus {
-  border-color: var(--button-color);
-  color: var(--button-color);
 }
 
 .clients__item:not(:last-child) {
@@ -254,12 +252,6 @@ address {
   margin-right: 10px;
 }
 
-.employees__social-link:hover,
-.employees__social-link:focus {
-  background-color: var(--button-color);
-  color: var(--btn-ftr-color);
-}
-
 .employees__social-link {
   width: 44px;
   height: 44px;
@@ -281,6 +273,10 @@ address {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+.employees__social-link:hover, .employees__social-link:focus {
+  background-color: var(--button-color);
+  color: var(--btn-ftr-color);
+}
 
 .footer-cont1__address {
   font-style: normal;
@@ -300,6 +296,9 @@ address {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+.footer-cont1__geo-lokation:hover, .footer-cont1__geo-lokation:focus {
+  color: var(--main-color);
+}
 
 .footer-cont1__contact-mail {
   font-size: 14px;
@@ -313,6 +312,9 @@ address {
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-cont1__contact-mail:hover, .footer-cont1__contact-mail:focus {
+  color: var(--main-color);
 }
 
 .footer-cont1__contact-phone-number {
@@ -328,19 +330,7 @@ address {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.footer-cont1__contact-mail:hover,
-.footer-cont1__contact-mail:focus {
-  color: var(--main-color);
-}
-
-.footer-cont1__contact-phone-number:hover,
-.footer-cont1__contact-phone-number:focus {
-  color: var(--main-color);
-}
-
-.footer-cont1__geo-lokation:hover,
-.footer-cont1__geo-lokation:focus {
+.footer-cont1__contact-phone-number:hover, .footer-cont1__contact-phone-number:focus {
   color: var(--main-color);
 }
 
@@ -375,11 +365,6 @@ address {
   display: flex;
 }
 
-.footer-cont__link:hover,
-.footer-cont__link:focus {
-  background-color: var(--button-color);
-}
-
 .footer-cont__link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -403,6 +388,9 @@ address {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+.footer-cont__link:hover, .footer-cont__link:focus {
+  background-color: var(--button-color);
+}
 
 .footer-cont__title {
   font-weight: 700;
@@ -424,12 +412,12 @@ address {
 .footer-cont2__title {
   font-family: "Roboto";
   font-style: normal;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 14px;
-  line-height: 24px;
-  /* or 171% */
+  line-height: 16px;
   letter-spacing: 0.03em;
-  color: #757575;
+  text-transform: uppercase;
+  color: #FFFFFF;
 }
 
 .footer-cont2__input-form {
@@ -469,9 +457,7 @@ address {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.footer-cont2__btn:hover,
-.footer-cont2__btn:focus {
+.footer-cont2__btn:hover, .footer-cont2__btn:focus {
   cursor: pointer;
   background-color: var(--button-color);
 }
@@ -540,9 +526,7 @@ address {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.menu__link:hover,
-.menu__link:focus {
+.menu__link:hover, .menu__link:focus {
   color: var(--main-color);
 }
 
@@ -561,12 +545,12 @@ address {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.connection__mail:hover,
-.connection__mail:focus {
+.connection__mail:hover, .connection__mail:focus,
+.connection__phone-number:hover,
+.connection__phone-number:focus {
   color: var(--main-color);
 }
-
+.connection__mail:hover, .connection__mail:focus,
 .connection__phone-number:hover,
 .connection__phone-number:focus {
   color: var(--main-color);
@@ -598,9 +582,6 @@ address {
   margin-left: 93px;
 }
 
-/* .menu-list:not(:last-child){
-    margin-left: 50px;
-} */
 .connection {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -654,17 +635,23 @@ address {
   position: relative;
   margin-bottom: 10px;
 }
+.modal-list:focus-within > .modal-list__svg, .modal-list:hover > .modal-list__svg {
+  cursor: pointer;
+  fill: var(--button-color);
+}
+.modal-list:focus-within > .modal-list__input, .modal-list:hover > .modal-list__input {
+  border-color: var(--button-color);
+  cursor: pointer;
+}
+.modal-list:focus-within > .modal-list__comment, .modal-list:hover > .modal-list__comment {
+  cursor: pointer;
+  border-color: var(--button-color);
+}
 
 .modal__btn-svg {
   fill: currentColor;
   width: 11px;
   height: 11px;
-}
-
-.modal__close-btn:hover,
-.modal__close-btn:focus {
-  cursor: pointer;
-  color: var(--button-color);
 }
 
 .modal__window {
@@ -751,24 +738,6 @@ address {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-list:focus-within > .modal-list__svg,
-.modal-list:hover > .modal-list__svg {
-  cursor: pointer;
-  fill: var(--button-color);
-}
-
-.modal-list:focus-within > .modal-list__input,
-.modal-list:hover > .modal-list__input {
-  border-color: var(--button-color);
-  cursor: pointer;
-}
-
-.modal-list:focus-within > .modal-list__comment,
-.modal-list:hover > .modal-list__comment {
-  cursor: pointer;
-  border-color: var(--button-color);
-}
-
 .modal__check:checked + .modal__check-desc::before {
   background-color: #2196f3;
   background-image: url("../images/icons/check-modal.svg");
@@ -805,9 +774,7 @@ address {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.modal__window-button:hover,
-.modal__window-button:focus {
+.modal__window-button:hover, .modal__window-button:focus {
   cursor: pointer;
   background-color: var(--button-color);
 }
@@ -834,9 +801,7 @@ address {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.projects__direction-btn:hover,
-.projects__direction-btn:focus {
+.projects__direction-btn:hover, .projects__direction-btn:focus {
   -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
   background-color: var(--main-color);
@@ -908,18 +873,14 @@ address {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.cases__link:hover,
-.cases__link:focus {
+.cases__link:hover, .cases__link:focus {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-
 .cases__link:hover .overlay {
   -webkit-transform: translateY(0%);
           transform: translateY(0%);
 }
-
 .cases__link:focus .overlay {
   -webkit-transform: translateY(0%);
           transform: translateY(0%);
@@ -1139,9 +1100,7 @@ address {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.hero__modal-btn:hover,
-.hero__modal-btn:focus {
+.hero__modal-btn:hover, .hero__modal-btn:focus {
   background-color: var(--button-color);
 }
 
@@ -1195,8 +1154,11 @@ address {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+.modal__close-btn:hover, .modal__close-btn:focus {
+  cursor: pointer;
+  color: var(--button-color);
+}
 
-/*======================modal-window=========*/
 .modal__window {
   width: 448px;
   margin: 0 auto;

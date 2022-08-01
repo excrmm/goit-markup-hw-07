@@ -15,6 +15,12 @@
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+
+&:hover,
+&:focus {
+    color: var(--main-color);
+}
 }
 
 .footer-cont1__contact-mail {
@@ -29,6 +35,12 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
+
+
+&:hover,
+&:focus {
+    color: var(--main-color);
+}
 }
 
 .footer-cont1__contact-phone-number {
@@ -42,22 +54,16 @@
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.footer-cont1__contact-mail:hover,
-.footer-cont1__contact-mail:focus {
+
+
+
+&:hover,
+&:focus {
     color: var(--main-color);
 }
-
-.footer-cont1__contact-phone-number:hover,
-.footer-cont1__contact-phone-number:focus {
-    color: var(--main-color);
 }
 
-.footer-cont1__geo-lokation:hover,
-.footer-cont1__geo-lokation:focus {
-    color: var(--main-color);
-}
 
 
 
@@ -95,11 +101,7 @@
 
 
 
-.footer-cont__link:hover,
-.footer-cont__link:focus {
-    background-color: var(--button-color);
 
-}
 
 .footer-cont__link {
     display: flex;
@@ -113,8 +115,13 @@
     transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
+&:hover,
+&:focus {
+    background-color: var(--button-color);
+
+}
+}
 
 .footer-cont__title {
 
@@ -138,14 +145,13 @@
 .footer-cont2__title {
     font-family: 'Roboto';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 700;
     font-size: 14px;
-    line-height: 24px;
-
-    /* or 171% */
+    line-height: 16px;
     letter-spacing: 0.03em;
-
-    color: #757575;
+    text-transform: uppercase;
+    
+    color: #FFFFFF;
 }
 
 .footer-cont2__input-form {
@@ -178,12 +184,13 @@
     transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.footer-cont2__btn:hover,
-.footer-cont2__btn:focus {
+
+&:hover,
+&:focus {
     cursor: pointer;
     background-color: var(--button-color);
+}
 }
 
 .footer-cont2__svg-telegram {

@@ -58,11 +58,7 @@
     margin-right: 10px
 }
 
-.employees__social-link:hover,
-.employees__social-link:focus {
-    background-color: var(--button-color);
-    color: var(--btn-ftr-color);
-}
+
 
 .employees__social-link {
     width: 44px;
@@ -75,4 +71,10 @@
     transition-property: background-color, color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+&:hover,
+&:focus {
+    background-color: var(--button-color);
+    color: var(--btn-ftr-color);
+}
 }

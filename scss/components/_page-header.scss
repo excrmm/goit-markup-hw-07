@@ -8,13 +8,16 @@
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.menu__link:hover,
-.menu__link:focus {
+
+&:hover,
+&:focus {
     color: var(--main-color);
 
 }
+
+}
+
 .connection__mail,
 .connection__phone-number {
     font-weight: 500;
@@ -27,16 +30,17 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-}
 
-.connection__mail:hover,
-.connection__mail:focus {
+
+&:hover,
+&:focus {
     color: var(--main-color);
 }
 
-.connection__phone-number:hover,
-.connection__phone-number:focus {
+&:hover,
+&:focus {
     color: var(--main-color);
+}
 }
 
 .connection__icons {
@@ -61,9 +65,6 @@
     margin-left: 93px;
 }
 
-/* .menu-list:not(:last-child){
-    margin-left: 50px;
-} */
 
 
 

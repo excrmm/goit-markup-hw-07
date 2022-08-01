@@ -15,14 +15,15 @@
     transition-property: background-color, color, box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.projects__direction-btn:hover,
-.projects__direction-btn:focus {
+
+&:hover,
+&:focus {
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
         0px 2px 2px rgba(0, 0, 0, 0.12);
     background-color: var(--main-color);
     color: var(--btn-ftr-color);
+}
 }
 
 .cases__name {
@@ -87,19 +88,20 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-}
 
-.cases__link:hover,
-.cases__link:focus {
+
+&:hover,
+&:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.cases__link:hover .overlay {
+&:hover .overlay {
     transform: translateY(0%);
 }
 
-.cases__link:focus .overlay {
+&:focus .overlay {
     transform: translateY(0%);
+}
 }
 
 .cases__list-wrapper {

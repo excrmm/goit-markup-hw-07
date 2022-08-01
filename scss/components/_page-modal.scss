@@ -13,6 +13,26 @@
     margin-bottom: 10px;
 
 
+&:focus-within>.modal-list__svg,
+&:hover>.modal-list__svg {
+    cursor: pointer;
+    fill: var(--button-color);
+
+}
+
+&:focus-within>.modal-list__input,
+&:hover>.modal-list__input {
+    border-color: var(--button-color);
+    cursor: pointer;
+
+}
+
+&:focus-within>.modal-list__comment,
+&:hover>.modal-list__comment {
+    cursor: pointer;
+    border-color: var(--button-color);
+
+}
 }
 
 .modal__btn-svg {
@@ -21,11 +41,7 @@
     height: 11px;
 }
 
-.modal__close-btn:hover,
-.modal__close-btn:focus {
-    cursor: pointer;
-    color: var(--button-color);
-}
+
 
 .modal__window {
     width: 449px;
@@ -105,26 +121,6 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-list:focus-within>.modal-list__svg,
-.modal-list:hover>.modal-list__svg {
-    cursor: pointer;
-    fill: var(--button-color);
-
-}
-
-.modal-list:focus-within>.modal-list__input,
-.modal-list:hover>.modal-list__input {
-    border-color: var(--button-color);
-    cursor: pointer;
-
-}
-
-.modal-list:focus-within>.modal-list__comment,
-.modal-list:hover>.modal-list__comment {
-    cursor: pointer;
-    border-color: var(--button-color);
-
-}
 
 
 .modal__check:checked+.modal__check-desc::before {
@@ -162,10 +158,11 @@
     transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.modal__window-button:hover,
-.modal__window-button:focus {
+
+&:hover,
+&:focus {
     cursor: pointer;
     background-color: var(--button-color);
+}
 }
